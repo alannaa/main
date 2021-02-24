@@ -57,6 +57,8 @@
 #tabs {
   width: 100%;
   margin-bottom: 5%;
+  font-size: 20px;
+  text-align: center;
 }
 
 body {
@@ -253,6 +255,14 @@ footer {
 }
 
 @media print, screen and (max-width: 960px) {
+  #profile-photo {
+    max-width: 55%;
+    height: auto;
+  }
+
+  body, header {
+    text-align: center;
+  }
 
   div.wrapper {
     width:auto;
@@ -263,10 +273,6 @@ footer {
     float:none;
     position:static;
     width:auto;
-  }
-
-  header {
-    padding-right:320px;
   }
 
   section {
@@ -285,9 +291,17 @@ footer {
     right:50px;
     top:52px;
   }
+
+  #hobbies {
+    text-align: left;
+  }
 }
 
 @media print, screen and (max-width: 720px) {
+  body, header{
+    text-align: center;
+  }
+
   body {
     word-wrap:break-word;
   }
@@ -306,6 +320,10 @@ footer {
 }
 
 @media print, screen and (max-width: 480px) {
+  body, header {
+    text-align: center;
+  }
+
   body {
     padding:15px;
   }
@@ -325,8 +343,4 @@ footer {
     font-size:12pt;
     color:#444;
   }
-}
-
-#tabs {
-  text-align: center;
 }
