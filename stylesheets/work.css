@@ -196,7 +196,12 @@ section {
 
 p + ul {
   margin-top: -15px;
-  margin-left: -15px;
+  margin-left: -10px;
+}
+
+p + ol {
+  margin-top: -15px;
+  margin-left: -10px;
 }
 
 .demo-left {

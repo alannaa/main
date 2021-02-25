@@ -71,41 +71,26 @@
             <li><b>Calculate the cosine similarity</b> between trigram collections of unknown files and known files</li>
             <li>Match unknown documents with known documents based on the range of most similar to least similar</li>
             <li>Organize output and <b>store</b> in output file indicated in sys args</li>
-            <li>To run at command line: python langPredictor.py inputData.txt [output file name].txt
           </ol>
         </p>
     </section>
 
     <section>
-      <p>
         <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Light 'Em All</h2>
-        <img alt="Code Demo" class="demo-left" src="../resources/lea.gif">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br>
-        Takeaways
-        <ul>
-          <li>item</li>
-          <li>item</li>
-        </ul>
-      </p>
-    </section>
-
-    <br>
-    <br>
-    <br>
-
-    <section>
-      <p>
-        <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Minesweeper</h2>
-        <img alt="Code Demo" class="demo-right" src="../resources/ms.gif">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br>
-        Takeaways
-        <ul>
-          <li>item</li>
-          <li>item</li>
-        </ul>
-      </p>
+        <img alt="UML Diagram" class="demo-left" src="../resources/lea.gif">
+        <p>
+          CS 2510 Fundamentals of CS II - Spring 2018<br>
+          Java and Graph Theory<br><br>
+          <b>Project Description:</b> Implement Light ‘Em All, a game where the player connects wires by rotating tiles and moves the power station across the wires until the entire grid is connected and lit. The catch: The power station is weak and only exerts power up to a particular radius from the station, so once all the wires are connected the user must use the arrow keys to find a point in the grid where all edges of the grid are reachable by light. <br><br>
+          <b>Project highlights:</b>
+          <ul>
+            <li>Determined the <b>minimum spanning tree</b> of the game's underlying graph using <b>Kruskal’s algorithm</b> to generate the continuous wire grid before randomly rotating tiles for gameplay</li>
+            <li>Calculated <b>radius of power</b> by finding the furthest distance between any two nodes and cutting that in half</li>
+            <li>Used <b>breadth first search</b> to traverse tiles stemming from power station and light only the tiles within the radius of power. Implemented gradient color to make closer nodes brighter than further nodes.</li>
+            <li>Implemented the option to generate a graph with a <b>bias</b> toward more horizontal or vertical wires by increasing the weight of horizontal or vertical edges respectively</li>
+            <li>Implemented <b>hexagonal version</b> of the game where tiles are 6-sided </li>
+          </ul>
+        </p>
     </section>
 
     <footer>
