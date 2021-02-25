@@ -25,29 +25,61 @@
 <body>
   <div class="wrapper">
 
-    <section>
+    <h4 id="reposMsg">GH repos of the following projects and more are available upon request</h4>
 
-      <p>
-        <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hey! That's my Fish</h2>
-        <img alt="UML Diagram" class="demo-left" src="../resources/logo.png">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        <br>
-        Takeaways
-        <ul>
-          <li>item</li>
-          <li>item</li>
-        </ul>
-      </p>
+    <section>
+        <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fish Game Server</h2>
+        <img alt="UML Diagram" class="demo-left" src="../resources/sundown_diagram.png">
+        <p>
+          CS 4500 Software Development - Fall 2020<br>
+          Roughly 7,375 lines of Java<br><br>
+          <b>Project Description:</b> Design and implement a gaming system that hosts games of Hey, That’s my Fish! and provides servers to which hackers can connect AI players to compete in tournaments. Project implemented from the bottom up starting with game pieces, full gameplay implementation, an example implementation of an AI player, all the way to the tournament server component. Project completed while fully participating in Northeastern’s key undergraduate software development course — without enrolling. That’s correct, you will not find CS 4500 on my transcript. With the permission of Professor Felleisen, I partook in this course after being told I didn’t meet the requirements to. But I simply did not wish to wait another year to get similar experience at the MS level. Many undergraduates consider this course the most challenging of their career and point to the course as what got them ready for a serious co-op. According to Professor Felleisen, I earned an A for the equivalent MS course.<br><br>
+          <b>Project highlights:</b>
+          <ul>
+            <li>Pair programming collaboration with Brock Fenbert</li>
+            <li>Wrote detailed <b>design documents</b>, defended design choices</li>
+            <li>Performed <b>two code walks</b> for class feedback and implemented feedback</li>
+            <li><b>Integration tests</b> for each milestone; unit tests for each file</li>
+            <li>A <b>complex tree data structure to lazily generate</b> future game outcomes for strategizing and determining game rules mid-game</li>
+            <li>Implemented a potential hacker’s AI player-software using the <b>minimax algorithm strategy</b></li>
+            <li>Designed and wrote <b>player API</b> protocol documentation</li>
+            <li>Made design decisions mindful of potential security threats to internal system</li>
+            <li>Implemented <b>remote-proxy pattern</b>, bringing together the server-side game system and client-side AI players</li>
+          </ul>
+        </p>
     </section>
 
-    <br>
-    <br>
-    <br>
+    <section>
+        <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Language Predictor Tool</h2>
+        <img alt="Code Demo" class="demo-right" src="../resources/lp.png">
+        <p>
+          DS 2000 - Spring 2018<br>
+          Python and Statistics<br><br>
+          <b>Project Description:</b> Build a tool that predicts which language a document is written in given a sample set of documents whose languages are known.
+          This was my first project writing in Python and I thoroughly enjoyed working on a project that married my love of languages with my love of coding.
+          In hindsight, the program takes quite a long time to run (~40 seconds) with only the small batch of input files given and thus could be implemented more efficiently with the few extra years of experience I now have.<br><br>
+          <b>Method:</b>
+          <ol>
+            <li>Create two dictionaries: one for files we <i>do</i> know the language of, and one for unknown files</li>
+            <li><b>Read in</b> the input files</li>
+            <li><b>Delegate and Store</b> each input file as such:
+              <ul><li>key = [file name] or [unknown#] where the # corresponds to the order with which the tool encountered the unknown files</li>
+                  <li>value = one long string that is the contents of the file</li></ul>
+            <li><b>Clean all data</b> (removing punctuation and spaces)</li>
+            <li>Collect and analyze the <b>frequency of trigrams</b> (3-character subsequences) in the files</li>
+            <li><b>Normalize the trigram frequencies</b></li>
+            <li><b>Calculate the cosine similarity</b> between trigram collections of unknown files and known files</li>
+            <li>Match unknown documents with known documents based on the range of most similar to least similar</li>
+            <li>Organize output and <b>store</b> in output file indicated in sys args</li>
+            <li>To run at command line: python langPredictor.py inputData.txt [output file name].txt
+          </ol>
+        </p>
+    </section>
 
     <section>
       <p>
         <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Light 'Em All</h2>
-        <img alt="Code Demo" class="demo-right" src="../resources/lea.gif">
+        <img alt="Code Demo" class="demo-left" src="../resources/lea.gif">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         <br>
         Takeaways
@@ -65,7 +97,7 @@
     <section>
       <p>
         <h2><a class="anchor" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Minesweeper</h2>
-        <img alt="Code Demo" class="demo-left" src="../resources/ms.gif">
+        <img alt="Code Demo" class="demo-right" src="../resources/ms.gif">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         <br>
         Takeaways

@@ -63,6 +63,10 @@
   font-size: 20px;
 }
 
+#reposMsg {
+  text-align: center;
+}
+
 body {
   background-color: #fff;
   padding:50px;
@@ -178,15 +182,21 @@ hr {
 }
 
 .wrapper {
-  width:100%
-  margin:0 auto;
+  margin: auto;
+  width: 100%;
 }
 
 section {
-  max-width: 100%;
+  margin: auto;
+  max-width: 1050px;
   padding-bottom:100px;
   padding-top: 50px;
   position: relative;
+}
+
+p + ul {
+  margin-top: -15px;
+  margin-left: -15px;
 }
 
 .demo-left {
@@ -197,7 +207,7 @@ section {
 }
 
 .demo-right {
-  max-width: 40%;
+  max-width: 50%;
   max-height: 90%;
   float: right;
   margin-left: 5%;
@@ -218,6 +228,10 @@ footer {
   }
 
   p, ul {
+    text-align: left;
+  }
+
+  p, ol {
     text-align: left;
   }
 
