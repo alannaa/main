@@ -58,7 +58,11 @@
         <p>
           DS 2000 - Spring 2018<br>
           Python and Statistics<br><br>
-          <b>Project Description:</b> Build a tool that predicts which language a document is written in given a sample set of documents whose languages are known.<br><br>
+          <b>Project Description:</b> Build a language-prediction tool to predict which langauge a given document is written in.
+          The tool is effective on documents written in one of seven languages included in the sample set.
+          To clarify, we were given a set of 37 documents written in one of the seven languages. The documents all had which language
+          they were written in named in their filename, except for 3 which had the word 'unknown' included in the filenames. We were then
+          set to implement our tool given these resources.<br><br>
           <b>Method:</b>
           <ol>
             <li>Create two dictionaries: one for files we <i>do</i> know the language of, and one for unknown files</li>
@@ -70,7 +74,7 @@
             <li>Collect and analyze the <b>frequency of trigrams</b> (3-character subsequences) in the files</li>
             <li><b>Normalize the trigram frequencies</b></li>
             <li><b>Calculate the cosine similarity</b> between trigram collections of unknown files and known files</li>
-            <li>Match unknown documents with known documents based on the range of most similar to least similar</li>
+            <li>Match the unknown documents with the languages they have the greatest cosine similarity index with</li>
             <li>Organize output and <b>store</b> in output file indicated in sys args</li>
           </ol>
         </p>
